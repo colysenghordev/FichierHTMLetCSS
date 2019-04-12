@@ -1,0 +1,233 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: aqua;
+}
+.div1{
+    border: 1px solid black;
+    width: 1000px;
+    /*height: 600px;*/
+    margin: 10px auto;
+    background-color: white;
+}
+
+.logo{
+    border: 1px solid black; 
+    height: 100px;
+}
+
+.logo1{
+    border: 1px solid black;
+    width: 100px;
+    height: 90px;  
+    margin: 3px 3px;
+    background-image: url("aurore-boréale.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+/*#logo{
+    text-align: center;
+    padding-top: 10px;
+}*/
+
+.div2{
+    border: 1px solid black;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav > ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+nav > ul > li{
+    float: left; /*on affiche(côte à côte) seulement les éléments li correspondant à nos onglets de menu en ligne*/
+}
+
+nav li{
+    list-style-type: none; /*enlève les puces devant les élément li appartenant à notre élément nav*/
+}
+
+.submenu{
+    display: none; /*cache les sous onglets*/
+}
+
+nav input[type=checkbox]{ /*rend notre case à cocher invisible*/
+    display: none;
+}
+
+.menu-mobile{
+    display: none;  /*on cache le bouton affichant le menu mobile*/
+}
+
+nav{
+    width: 100%;
+    background-color: greenyellow;
+}
+
+nav > ul > li{
+    float: left;
+    position: relative;
+}
+
+nav > ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav > ul > li > a{
+    padding: 20px 20px;
+    color: blue;
+}
+
+nav li:hover .submenu{
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding: 0px;
+    z-index: 100000;
+}
+
+.submenu li{
+    border-bottom: 1px solid red;
+}
+
+.submenu li a{
+    padding: 15px 30px;
+    font-size: 13px;
+    color: darkslateblue;
+    width: 270px;
+}
+
+.menu-html:hover{
+    border-top: 5px solid maroon;
+    background-color: darkorange;
+}
+
+.menu-css:hover{
+    border-top: 5px solid mediumslateblue;
+    background-color: aqua;
+}
+
+.menu-php:hover{
+    border-top: 5px solid peru;
+    background-color: yellow;
+}
+
+.menu-java:hover{
+    border-top: 5px solid lightslategrey;
+    background-color: tan;
+}
+
+nav > ul > li:hover a{
+    padding: 20px 30px 20px 30px;
+}
+
+.menu-html .submenu{
+     background-color: RGBa(230, 100, 40, 5);
+}
+
+.menu-css .submenu{
+    background-color: RGBa(000, 160, 240, 5);
+}
+
+.menu-php .submenu{
+    background-color: RGBa(251, 216, 99, 5);
+}
+
+nav input[type=checkbox]:checked ~ ul{
+    display: block;
+}
+
+@media screen and (max-width : 1400px){
+    .menu-mobile {
+        display: block;
+        color: wheat;
+        background-color: saddlebrown;
+        text-align: center;
+        font-weight: bolder;
+        padding: 0px 0;
+    }
+    nav ul{
+        display: none;
+    }
+}
+    nav ul li, nav ul li a {
+        width: 100%;
+        text-align: center;
+    }
+    nav ul li a, nav ul li:hover a{
+        padding: 10px 0px 10px 0px;
+    }
+    nav li:hover .submenu{
+        display: block;
+        position: static;
+    }
+
+.section{
+    border: 1px solid black;
+    position: relative;
+    height: 380px;
+}
+
+.sg{
+    border: 1px solid black;
+    width: 60%;
+    height: 98%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+.shd{
+    border: 1px solid blue;
+    width: 35%;
+    height: 60%;
+    position: absolute;
+    top: 7px;
+    right: 7px;
+}
+
+.sbg{
+    border: 1px solid blue;
+    width: 35%;
+    height: 35%;
+    position: absolute;
+    bottom: 0px;
+    right: 7px;  
+}
+
+.pdp{
+    border: 1px solid black;
+    height: 62px;
+}
+
+.pdp1{
+    border: 1px solid black;
+    width:  330.6666666667px;
+    height: 60px;
+    float: left;
+}
+
+.pdp2{
+    border: 1px solid black;
+    width:  330.6666666667px;
+    height: 60px;
+    float: left;
+}
+
+.pdp3{
+    border: 1px solid black;
+    width: 330.6666666667px;
+    height: 60px;
+    float: left;
+}
